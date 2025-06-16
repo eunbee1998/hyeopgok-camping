@@ -1,19 +1,21 @@
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import HallOfFame from "./pages/HallOfFame";
 import Broadcast from "./pages/Broadcast";
 import Highlights from "./pages/Highlights";
+import HallOfFame from "./pages/HallOfFame";
+import Navbar from "./components/Navbar";
+import "./styles.css";
 
 export default function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/hall-of-fame" element={<HallOfFame />} />
         <Route path="/broadcast" element={<Broadcast />} />
         <Route path="/highlights" element={<Highlights />} />
+        <Route path="/hall-of-fame" element={<HallOfFame />} />
       </Routes>
     </Router>
   );
