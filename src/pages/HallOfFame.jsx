@@ -17,7 +17,7 @@ export default function HallOfFame() {
     <>
       <Navbar />
       <div className="page">
-        <h2>📅 대회 연혁 & 우승팀</h2>
+        <h2 id="team-history">📅 대회 연혁 & 우승팀</h2>
         <ul>
           {teamData.map((item, i) => (
             <li key={i}>
@@ -26,7 +26,7 @@ export default function HallOfFame() {
           ))}
         </ul>
 
-        <h2>💑 협곡 최강 듀오</h2>
+        <h2 id="duo-history">💑 협곡 최강 듀오</h2>
         <ul>
           {duoData.map((item, i) => (
             <li key={i}>

@@ -12,7 +12,7 @@ export default function Highlights() {
     <>
       <Navbar />
       <div className="page">
-        <h2>✨ 대회 하이라이트</h2>
+        <h2 id="ggf-2025">✨ 25년 GGF 하이라이트</h2>
         {clips.map((clip, i) => (
           <div key={i}>
             <h4>{clip.title}</h4>
