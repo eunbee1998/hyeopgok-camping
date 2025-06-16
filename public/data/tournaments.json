@@ -11,25 +11,26 @@
     }
   },
   {
-    "name": "2025 협CK",
-    "image": "/images/2025_협CK.jpg",
-    "winner": {
-      "TOP": "김하늘",
-      "JUG": "최서윤",
-      "MID": "장도윤",
-      "ADC": "김유림",
-      "SUP": "박수민"
-    }
-  },
-  {
     "name": "2025 GG FESTIVAL",
     "image": "/images/2025_GGF.jpg",
     "winner": {
-      "TOP": "한지원",
-      "JUG": "강지훈",
-      "MID": "정예은",
-      "ADC": "이도윤",
-      "SUP": "류나영"
+      "GM" : "이정주"
+      "TOP": "김준희",
+      "JUG": "윤승태",
+      "MID": "권석원",
+      "ADC": "박태진",
+      "SUP": "정도희"
     }
   }
+  {
+    "name": "2025 협CK",
+    "image": "/images/2025_협CK.jpg",
+    "winner": {
+      "TOP": "",
+      "JUG": "",
+      "MID": "",
+      "ADC": "",
+      "SUP": ""
+    }
+  },
 ]
