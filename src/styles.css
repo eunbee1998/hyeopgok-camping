@@ -115,3 +115,30 @@ body {
 .dropdown-menu button:hover {
   text-decoration: underline;
 }
+.tournament-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.tournament-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tournament-info h3 {
+  margin-bottom: 10px;
+}
+
+.tournament-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tournament-info li {
+  margin: 4px 0;
+  font-size: 15px;
+}
