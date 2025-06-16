@@ -1,0 +1,35 @@
+[
+  {
+    "name": "2024 협즈",
+    "image": "/images/2024_hyeopz.jpg",
+    "winner": {
+      "TOP": "박창익",
+      "JUG": "이승기",
+      "MID": "이현우",
+      "ADC": "맹주현",
+      "SUP": "이은비"
+    }
+  },
+  {
+    "name": "2025 협CK",
+    "image": "/images/2025_협CK.jpg",
+    "winner": {
+      "TOP": "김하늘",
+      "JUG": "최서윤",
+      "MID": "장도윤",
+      "ADC": "김유림",
+      "SUP": "박수민"
+    }
+  },
+  {
+    "name": "2025 GG FESTIVAL",
+    "image": "/images/2025_GGF.jpg",
+    "winner": {
+      "TOP": "한지원",
+      "JUG": "강지훈",
+      "MID": "정예은",
+      "ADC": "이도윤",
+      "SUP": "류나영"
+    }
+  }
+]
