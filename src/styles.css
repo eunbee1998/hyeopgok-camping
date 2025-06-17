@@ -115,6 +115,8 @@ body {
 .dropdown-menu button:hover {
   text-decoration: underline;
 }
+
+/* 기존 tournament-block 스타일 */
 .tournament-block {
   display: flex;
   align-items: center;
@@ -141,4 +143,49 @@ body {
 .tournament-info li {
   margin: 4px 0;
   font-size: 15px;
+}
+
+/* 추가하는 카드 형태 스타일 */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.card {
+  min-width: 240px;
+  background: #222;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  color: white;
+  flex-shrink: 0;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  height: 240px;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.winner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.winner-list li {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
 }
