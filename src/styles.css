@@ -26,7 +26,7 @@ body {
 .logo-box {
   position: relative;
   top: 20%;
-  background-color: transparent; /* ✅ 검은 직사각형 제거 */
+  background-color: transparent; /* 검은 직사각형 제거 */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ body {
 /* 콘텐츠 페이지 공통 */
 .page {
   padding: 20px;
-  padding-top: 70px;
+  padding-top: 70px; /* 네비바 아래 여백 확보 */
 }
 
 /* 네비게이션 바 */
@@ -151,6 +151,7 @@ body {
   font-size: 15px;
 }
 
+/* 가로 스크롤 카드 컨테이너 */
 .card-container {
   display: flex;
   overflow-x: auto;
@@ -163,6 +164,7 @@ body {
   -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
 }
 
+/* 카드 하나 */
 .card {
   width: 300px; /* 카드 가로 고정 */
   background: #222;
@@ -171,6 +173,10 @@ body {
   color: white;
   flex-shrink: 0;
   scroll-snap-align: start; /* 스크롤 스냅 위치 지정 */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
 }
 
 .card-image {
@@ -182,11 +188,13 @@ body {
 
 .card-content {
   padding: 12px;
+  flex-grow: 1;
 }
 
 .card-title {
   font-size: 1.1rem;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .winner-list {
@@ -199,3 +207,4 @@ body {
   font-size: 0.9rem;
   margin-bottom: 4px;
 }
+
