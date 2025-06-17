@@ -18,7 +18,7 @@ export default function Navbar() {
         {hoverMenu === "hall" && (
           <div className="dropdown-menu">
             <Link to="/hall-of-fame">대회 연혁 & 우승팀</Link>
-            <Link to="/hall-of-fame/duo">협곡최강듀오</Link>
+            <Link to="/hall-of-fame/duo">협캠최강듀오</Link>
           </div>
         )}
       </div>
