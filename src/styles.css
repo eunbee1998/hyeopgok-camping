@@ -158,11 +158,9 @@ body {
   gap: 16px;
   padding-bottom: 10px;
   scroll-behavior: smooth;
-
-  /* 스크롤 스냅 적용 */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
-  align-items: stretch; /* 카드 높이 균일하게 */
+  align-items: stretch;
 }
 
 /* 카드 하나 */
@@ -173,32 +171,31 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   color: white;
   flex-shrink: 0;
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* 스크롤 스냅 위치 지정 */
   display: flex;
   flex-direction: column;
   overflow: hidden;
   user-select: none;
 
-  min-height: 400px; /* 카드 최소 높이 지정 */
+  min-height: 460px; /* 카드 높이 통일 */
 }
 
 /* 카드 이미지 스타일 */
 .card-image {
   width: 100%;
-  height: auto;           /* 고정 높이 제거 */
-  max-height: 400px;      /* 최대 높이 지정 */
+  height: 180px;          /* 이미지 높이 고정 */
+  object-fit: contain;    /* 비율 유지하며 이미지 전부 보여주기 */
   border-radius: 12px 12px 0 0;
-  object-fit: contain;    /* 비율 유지하며 전체 보여주기 */
-  background-color: black; /* 이미지 주변 빈 공간 배경색 */
+  background-color: black; /* 빈 공간 배경색 */
 }
 
 .card-content {
   padding: 12px;
   flex-grow: 1;
-  min-height: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* 내용 간 간격 균일 */
+  justify-content: flex-start;
+  min-height: 160px;
 }
 
 .card-title {
@@ -211,9 +208,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.winner-list li {
-  font-size: 0.9rem;
-  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.5;
 }
