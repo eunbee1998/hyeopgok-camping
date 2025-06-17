@@ -51,7 +51,8 @@ body {
 
 /* 콘텐츠 페이지 공통 */
 .page {
-  padding: 50px;
+  padding: 20px;
+  padding-top: 70px;
 }
 
 /* 네비게이션 바 */
