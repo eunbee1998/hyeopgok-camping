@@ -172,11 +172,13 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   color: white;
   flex-shrink: 0;
-  scroll-snap-align: start; /* 스크롤 스냅 위치 지정 */
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   user-select: none;
+
+  min-height: 400px; 
 }
 
 /* 카드 이미지 스타일 수정 */
