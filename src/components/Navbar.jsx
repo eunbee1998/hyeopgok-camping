@@ -32,7 +32,7 @@ export default function Navbar() {
         {hoverMenu === "broadcast" && (
           <div className="dropdown-menu">
             <Link to="/broadcast/25ggf">중계영상(full)</Link>
-            <Link to="/highlights/25ggf">대회 하이라이트</Link>
+            <Link to="/highlights/highlightVideos">대회 하이라이트</Link>
           </div>
         )}
       </div>
