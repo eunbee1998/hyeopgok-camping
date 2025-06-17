@@ -212,3 +212,17 @@ body {
   font-size: 0.9rem;
   margin-bottom: 4px;
 }
+/* --- 비디오 관련 스타일 추가 --- */
+.video-card {
+  flex-shrink: 0; /* 부모 flex에서 크기 줄지 않도록 */
+  min-width: 320px;
+  width: 320px;
+  user-select: none;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
