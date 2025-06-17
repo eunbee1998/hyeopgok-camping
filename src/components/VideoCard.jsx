@@ -5,8 +5,8 @@ export default function VideoCard({ video, onClick }) {
 
   return (
     <div className="video-card" onClick={() => onClick(video.id)} style={{ cursor: "pointer" }}>
-      <img src={thumbnailUrl} alt={video.title} style={{ width: "100%", borderRadius: "8px" }} />
-      <div style={{ padding: "8px" }}>
+      <img src={thumbnailUrl} alt={video.title} style={{ width: "100%", borderRadius: 8 }} />
+      <div style={{ padding: 8 }}>
         <h4 style={{ margin: "4px 0", fontSize: "1rem", color: "#fff" }}>{video.title}</h4>
       </div>
     </div>
