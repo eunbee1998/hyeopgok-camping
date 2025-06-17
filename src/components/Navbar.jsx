@@ -28,7 +28,7 @@ export default function Navbar() {
         onMouseEnter={() => setHoverMenu("broadcast")}
         onMouseLeave={() => setHoverMenu("")}
       >
-        <div className="dropdown-title">📺 중계 영상</div>
+        <div className="dropdown-title">📺 대회영상</div>
         {hoverMenu === "broadcast" && (
           <div className="dropdown-menu">
             <Link to="/broadcast/25ggf">25년 GGF</Link>
