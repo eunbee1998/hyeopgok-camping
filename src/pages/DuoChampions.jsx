@@ -14,12 +14,12 @@ export default function DuoChampions() {
     <div className="page">
       <h2>🏆 명예의 전당 - 협곡최강듀오</h2>
       <div className="card-container">
-        {data.map((tournament, index) => (
+        {data.map((duoChampion, index) => (
           <div className="card" key={index}>
-            <img src={tournament.image} alt={tournament.name} className="card-image" />
+            <img src={duoChampion.image} alt={duoChampion.name} className="card-image" />
             <div className="card-content">
-              <h3 className="card-title">{tournament.name}</h3>
-              <p><strong>1등팀 선수: </strong>{tournament.winner}</p>
+              <h3 className="card-title">{duoChampion.name}</h3>
+              <p><strong>1등팀 선수: </strong>{duoChampion.winner}</p>
             </div>
           </div>
         ))}
