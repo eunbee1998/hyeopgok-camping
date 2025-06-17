@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Broadcast from "./pages/Broadcast";
-import Highlights from "./pages/highlightVideos";
+import Highlights from "./pages/HighlightVideos";
 import HallOfFame from "./pages/HallOfFame";
 import Navbar from "./components/Navbar";
 import "./styles.css";
