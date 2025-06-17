@@ -178,16 +178,16 @@ body {
   overflow: hidden;
   user-select: none;
 
-  min-height: 430px; /* 카드 높이 조정 */
+  min-height: 430px; /* 카드 높이 고정 */
 }
 
 /* 카드 이미지 스타일 */
 .card-image {
   width: 100%;
-  height: 320px; /* 올려주신 이미지 기준 높이 */
+  height: 320px; /* 이미지 높이 고정 */
   border-radius: 12px 12px 0 0;
   object-fit: cover; /* 비율 유지하며 꽉 채우기 */
-  background-color: black; /* 이미지 배경 검정으로 통일 */
+  background-color: black; /* 이미지 없는 부분 검정색 */
 }
 
 .card-content {
