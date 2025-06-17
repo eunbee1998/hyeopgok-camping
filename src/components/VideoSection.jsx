@@ -5,20 +5,20 @@ export default function VideoSection({ tournament, videos }) {
   const [playingId, setPlayingId] = useState(null);
 
   return (
-    <section style={{ marginBottom: 40, color: "white" }}>
+    <section style={{ marginBottom: "40px", color: "white" }}>
       <h3>{tournament}</h3>
       <div
         style={{
           display: "flex",
           overflowX: "auto",
-          gap: 12,
+          gap: "12px",
           scrollSnapType: "x mandatory",
           WebkitOverflowScrolling: "touch",
         }}
       >
-        {videos.map(video =>
+        {videos.map((video) =>
           playingId === video.id ? (
-            <div key={video.id} style={{ minWidth: 320, position: "relative" }}>
+            <div key={video.id} style={{ minWidth: "320px", position: "relative" }}>
               <iframe
                 width="320"
                 height="180"
@@ -27,20 +27,20 @@ export default function VideoSection({ tournament, videos }) {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                style={{ borderRadius: 8 }}
+                style={{ borderRadius: "8px" }}
               />
               <button
                 onClick={() => setPlayingId(null)}
                 style={{
                   position: "absolute",
-                  top: 4,
-                  right: 4,
+                  top: "4px",
+                  right: "4px",
                   background: "rgba(0,0,0,0.7)",
                   color: "white",
                   border: "none",
                   padding: "4px 8px",
                   cursor: "pointer",
-                  borderRadius: 4,
+                  borderRadius: "4px",
                 }}
               >
                 닫기
