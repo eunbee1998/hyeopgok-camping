@@ -1,4 +1,3 @@
-import DuoChampions from "./DuoChampions";
 import React, { useEffect, useState } from "react";
 
 export default function DuoChampions() {
