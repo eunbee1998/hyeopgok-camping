@@ -1,7 +1,7 @@
 [
-  
   {
-    "tournament": "과거 비공식대회",
+    "id": "highlightVideos",
+    "name": "과거 비공식대회",
     "videos": [
       {
         "id": "tK9BM3FIC9Y",
