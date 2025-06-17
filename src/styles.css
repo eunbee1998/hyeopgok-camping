@@ -162,6 +162,7 @@ body {
   /* 스크롤 스냅 적용 */
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+  align-items: stretch; /* 카드 높이 균일하게 */
 }
 
 /* 카드 하나 */
@@ -178,23 +179,26 @@ body {
   overflow: hidden;
   user-select: none;
 
-  min-height: 400px; 
+  min-height: 400px; /* 카드 최소 높이 지정 */
 }
 
-/* 카드 이미지 스타일 수정 */
+/* 카드 이미지 스타일 */
 .card-image {
   width: 100%;
   height: auto;           /* 고정 높이 제거 */
-  max-height: 400px;      /* 최대 높이 지정 (필요시 조정 가능) */
+  max-height: 400px;      /* 최대 높이 지정 */
   border-radius: 12px 12px 0 0;
-  object-fit: contain;    /* 이미지 비율 유지하며 전체 보여주기 */
-  background-color: black; /* 빈 공간 배경색 설정 */
+  object-fit: contain;    /* 비율 유지하며 전체 보여주기 */
+  background-color: black; /* 이미지 주변 빈 공간 배경색 */
 }
 
 .card-content {
   padding: 12px;
   flex-grow: 1;
   min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 내용 간 간격 균일 */
 }
 
 .card-title {
