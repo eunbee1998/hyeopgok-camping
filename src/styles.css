@@ -179,11 +179,14 @@ body {
   user-select: none;
 }
 
+/* 카드 이미지 스타일 수정 */
 .card-image {
   width: 100%;
-  height: 240px;
+  height: auto;           /* 고정 높이 제거 */
+  max-height: 400px;      /* 최대 높이 지정 (필요시 조정 가능) */
   border-radius: 12px 12px 0 0;
-  object-fit: cover;
+  object-fit: contain;    /* 이미지 비율 유지하며 전체 보여주기 */
+  background-color: black; /* 빈 공간 배경색 설정 */
 }
 
 .card-content {
@@ -207,4 +210,3 @@ body {
   font-size: 0.9rem;
   margin-bottom: 4px;
 }
-
