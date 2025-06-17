@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Broadcast from "./pages/Broadcast";
-import Highlights from "./pages/Highlights";
+import Highlights from "./pages/HighlightVideos";
 import HallOfFame from "./pages/HallOfFame";
 import Navbar from "./components/Navbar";
 import "./styles.css";
@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/broadcast" element={<Broadcast />} />
-        <Route path="/highlights" element={<Highlights />} />
+        <Route path="/highlights" element={<HighlightVideos />} />
         <Route path="/hall-of-fame" element={<HallOfFame />} />
         
         {/* 여기에 DuoChampions 라우트 추가 */}
