@@ -18,7 +18,15 @@ export default function VideoSection({ tournament, videos }) {
       >
         {videos.map((video) =>
           playingId === video.id ? (
-            <div key={video.id} style={{ minWidth: "320px", position: "relative" }}>
+            <div
+              key={video.id}
+              style={{
+                minWidth: "320px",
+                width: "320px",
+                position: "relative",
+                flexShrink: 0, // 부모 flex가 크기 줄이는 걸 방지
+              }}
+            >
               <iframe
                 width="320"
                 height="180"
@@ -27,7 +35,7 @@ export default function VideoSection({ tournament, videos }) {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                style={{ borderRadius: "8px" }}
+                style={{ borderRadius: "8px", display: "block" }}
               />
               <button
                 onClick={() => setPlayingId(null)}
