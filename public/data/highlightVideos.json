@@ -1,11 +1,25 @@
 [
   {
     "id": "highlightVideos",
-    "name": "과거 비공식대회",
+    "tournament": "과거 비공식대회",
     "videos": [
       {
         "id": "tK9BM3FIC9Y",
         "title": "비공식대회_멋진원딜 강주혁"
+      }
+    ]
+  },
+  {
+    "id": "25ggf",
+    "tournament": "25년 GGF",
+    "videos": [
+      {
+        "id": "영상ID1",
+        "title": "25년 GGF 하이라이트 1"
+      },
+      {
+        "id": "영상ID2",
+        "title": "25년 GGF 하이라이트 2"
       }
     ]
   }
