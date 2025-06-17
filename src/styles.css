@@ -192,6 +192,7 @@ body {
 .card-content {
   padding: 12px;
   flex-grow: 1;
+  min-height: 120px;
 }
 
 .card-title {
