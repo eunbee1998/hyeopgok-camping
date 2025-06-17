@@ -5,7 +5,7 @@ export default function HighlightVideos() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("/data/highlightVideos.json")
+    fetch("/data/HighlightVideos.json")
       .then((res) => res.json())
       .then(setData)
       .catch(console.error);
