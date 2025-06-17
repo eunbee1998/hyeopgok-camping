@@ -31,24 +31,16 @@ export default function Navbar() {
         <div className="dropdown-title">📺 대회영상</div>
         {hoverMenu === "broadcast" && (
           <div className="dropdown-menu">
-            <Link to="/broadcast/25ggf">25년 GGF</Link>
-            {/* 필요시 다른 대회도 추가 */}
+            <Link to="/broadcast/25ggf">중계영상(full)</Link>
+            <Link to="/highlights/25ggf">대회 하이라이트</Link>
           </div>
         )}
       </div>
 
-      <div
-        className="dropdown"
-        onMouseEnter={() => setHoverMenu("highlight")}
-        onMouseLeave={() => setHoverMenu("")}
-      >
-        <div className="dropdown-title">📌 하이라이트</div>
-        {hoverMenu === "highlight" && (
-          <div className="dropdown-menu">
-            <Link to="/highlights/25ggf">25년 GGF</Link>
-          </div>
-        )}
-      </div>
+      {/* 하이라이트 메뉴는 드롭다운 제거하고 단일 링크로 변경 */}
+      <Link to="/highlights/25ggf" className="navbar-link">
+        📌 하이라이트
+      </Link>
     </div>
   );
 }
