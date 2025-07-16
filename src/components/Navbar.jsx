@@ -16,7 +16,11 @@ export default function Navbar() {
       >
         <div className="dropdown-title">🏆 명예의 전당</div>
         {hoverMenu === "hall" && (
-          <div className="dropdown-menu">
+          <div
+            className="dropdown-menu"
+            onMouseEnter={() => setHoverMenu("hall")}
+            onMouseLeave={() => setHoverMenu("")}
+          >
             <Link to="/hall-of-fame">대회 연혁 & 우승팀</Link>
             <Link to="/hall-of-fame/duo">협캠최강듀오</Link>
           </div>
@@ -30,7 +34,11 @@ export default function Navbar() {
       >
         <div className="dropdown-title">📺 대회영상</div>
         {hoverMenu === "broadcast" && (
-          <div className="dropdown-menu">
+          <div
+            className="dropdown-menu"
+            onMouseEnter={() => setHoverMenu("broadcast")}
+            onMouseLeave={() => setHoverMenu("")}
+          >
             <Link to="/broadcast/25ggf">중계영상(full)</Link>
             <Link to="/highlights/highlightVideos">대회 하이라이트</Link>
           </div>
