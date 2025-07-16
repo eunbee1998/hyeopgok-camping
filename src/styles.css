@@ -40,7 +40,8 @@ body {
 /* 콘텐츠 페이지 공통 스타일 */
 .page {
   padding: 20px;
-  padding-top: 100px; /* 네비게이션 바 공간 확보 */
+  padding-top: 60px; /* 네비게이션 바 공간 확보 (네비바 높이에 맞춤) */
+  background-color: transparent; /* 배경 투명 처리 */
   width: 100%;         /* 화면 전체 너비 */
   box-sizing: border-box; /* 패딩 포함 크기 계산 */
   overflow-x: visible;    /* 가로 넘침 허용 */
