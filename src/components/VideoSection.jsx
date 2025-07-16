@@ -21,15 +21,15 @@ export default function VideoSection({ tournament, videos }) {
             <div
               key={video.id}
               style={{
-                minWidth: "320px",
-                width: "320px",
+                minWidth: "500px",  // 너비 키움
+                width: "500px",     // 너비 키움
                 position: "relative",
-                flexShrink: 0, // 부모 flex가 크기 줄이는 걸 방지
+                flexShrink: 0,      // 크기 줄어드는 거 방지
               }}
             >
               <iframe
-                width="320"
-                height="180"
+                width="500"         // iframe 너비 키움
+                height="225"        // 16:9 비율 높이
                 src={`https://www.youtube.com/embed/${video.id}?autoplay=1`}
                 title={video.title}
                 frameBorder="0"
