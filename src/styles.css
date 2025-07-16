@@ -40,8 +40,10 @@ body {
 /* 콘텐츠 페이지 공통 스타일 */
 .page {
   padding: 20px;
-  margin-top: 50px; /* 네비게이션 바 높이만큼 마진 주어 바로 배경 보이게 */
-  /* padding-top 제거 */
+  padding-top: 100px; /* 네비게이션 바 공간 확보 */
+  width: 100%;         /* 화면 전체 너비 */
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+  overflow-x: visible;    /* 가로 넘침 허용 */
 }
 
 /* 네비게이션 바 스타일 */
