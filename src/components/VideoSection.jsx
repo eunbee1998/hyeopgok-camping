@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import VideoCard from "./VideoCard";
+import React from "react";
 
 export default function VideoSection({ tournament, videos }) {
-  const [playingId, setPlayingId] = useState(null);
-
   return (
     <section style={{ marginBottom: "40px", color: "white" }}>
       <h3>{tournament}</h3>
@@ -16,48 +13,28 @@ export default function VideoSection({ tournament, videos }) {
           WebkitOverflowScrolling: "touch",
         }}
       >
-        {videos.map((video) =>
-          playingId === video.id ? (
-            <div
-              key={video.id}
-              style={{
-                minWidth: "400px",  // 영상 크기 좀 키움
-                width: "400px",
-                position: "relative",
-                flexShrink: 0,
-              }}
-            >
-              <iframe
-                width="400"
-                height="281"
-                src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1`}
-                title={video.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ borderRadius: "8px", display: "block" }}
-              />
-              <button
-                onClick={() => setPlayingId(null)}
-                style={{
-                  position: "absolute",
-                  top: "4px",
-                  right: "4px",
-                  background: "rgba(0,0,0,0.7)",
-                  color: "white",
-                  border: "none",
-                  padding: "4px 8px",
-                  cursor: "pointer",
-                  borderRadius: "4px",
-                }}
-              >
-                닫기
-              </button>
-            </div>
-          ) : (
-            <VideoCard key={video.id} video={video} onClick={setPlayingId} />
-          )
-        )}
+        {videos.map((video) => (
+          <div
+            key={video.id}
+            style={{
+              minWidth: "500px",
+              width: "500px",
+              position: "relative",
+              flexShrink: 0,
+            }}
+          >
+            <iframe
+              width="500"
+              height="281"  // 16:9 비율 유지
+              src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1`}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ borderRadius: "8px", display: "block" }}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );
