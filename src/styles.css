@@ -40,7 +40,8 @@ body {
 /* 콘텐츠 페이지 공통 스타일 */
 .page {
   padding: 20px;
-  padding-top: 100px; /* 네비게이션바 아래 여백 확보 */
+  margin-top: 50px; /* 네비게이션 바 높이만큼 마진 주어 바로 배경 보이게 */
+  /* padding-top 제거 */
 }
 
 /* 네비게이션 바 스타일 */
@@ -54,7 +55,7 @@ body {
   position: fixed; /* 스크롤해도 고정 */
   top: 0;
   width: 100vw; /* 화면 너비에 딱 맞춤 */
-  overflow: visible; /* 드롭다운이 잘리지 않도록 변경 */
+  overflow: visible; /* 드롭다운 메뉴 잘리지 않게 */
   -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
   box-sizing: border-box; /* 패딩 포함 너비 계산 */
   z-index: 10; /* 앞쪽 배치 */
@@ -86,7 +87,7 @@ body {
   background: #2E2E2E; /* 진한 회색 계열 */
   border: 1px solid #ccc;
   padding: 10px 15px;
-  z-index: 9999; /* 충분히 높게 설정 */
+  z-index: 9999; /* 충분히 높게 설정해서 다른 요소보다 위에 */
   display: flex;
   flex-direction: column;
   min-width: 180px; /* 최소 너비 */
