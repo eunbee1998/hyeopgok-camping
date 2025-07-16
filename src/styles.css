@@ -78,6 +78,7 @@ body {
 /* 드롭다운 컨테이너 */
 .dropdown {
   position: relative;
+  padding: 3px;
 }
 
 /* 드롭다운 메뉴 스타일 */
