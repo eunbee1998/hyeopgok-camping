@@ -9,11 +9,18 @@ export default function Navbar() {
     setOpenMenu(openMenu === menuName ? "" : menuName);
   };
 
+  const closeMenu = () => {
+    setOpenMenu("");
+  };
+
   return (
     <div className="navbar">
       <Link to="/">🏠 홈</Link>
 
-      <div className="dropdown">
+      <div
+        className="dropdown"
+        onMouseLeave={closeMenu}  // 드롭다운 밖으로 마우스 나가면 닫기
+      >
         <div
           className="dropdown-title"
           onClick={() => toggleMenu("hall")}
@@ -29,7 +36,10 @@ export default function Navbar() {
         )}
       </div>
 
-      <div className="dropdown">
+      <div
+        className="dropdown"
+        onMouseLeave={closeMenu}
+      >
         <div
           className="dropdown-title"
           onClick={() => toggleMenu("broadcast")}
