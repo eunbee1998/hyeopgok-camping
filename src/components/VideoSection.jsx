@@ -28,15 +28,15 @@ export default function VideoSection({ tournament, videos }) {
               }}
             >
               <iframe
-                width="320"
-                height="180"
-                src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1&controls=1&rel=0`}
-                title={video.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ borderRadius: 8, display: "block" }}
-              />
+  width="500"       // 썸네일과 같은 크기로 맞춰줌
+  height="281"      // 16:9 비율에 맞게 높이 조절 (400 * 9 / 16)
+  src={`https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1`}  // mute=1 추가
+  title={video.title}
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  style={{ borderRadius: "8px", display: "block" }}
+/>
               <button
                 onClick={() => setPlayingId(null)}
                 style={{
