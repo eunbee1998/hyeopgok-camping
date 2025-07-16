@@ -5,22 +5,33 @@ import "../styles.css";
 export default function Navbar() {
   const [hoverMenu, setHoverMenu] = useState("");
 
+  // 마우스가 들어온 메뉴 이름을 저장
+  const handleMouseOver = (menuName) => {
+    setHoverMenu(menuName);
+  };
+
+  // 마우스가 메뉴 바깥으로 나가면 닫기
+  const handleMouseOut = (e) => {
+    // e.currentTarget은 이벤트가 걸린 div
+    // e.relatedTarget은 마우스가 이동한 대상
+    // 메뉴 영역 밖으로 나갔는지 확인
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      setHoverMenu("");
+    }
+  };
+
   return (
     <div className="navbar">
       <Link to="/">🏠 홈</Link>
 
       <div
         className="dropdown"
-        onMouseEnter={() => setHoverMenu("hall")}
-        onMouseLeave={() => setHoverMenu("")}
+        onMouseOver={() => handleMouseOver("hall")}
+        onMouseOut={handleMouseOut}
       >
         <div className="dropdown-title">🏆 명예의 전당</div>
         {hoverMenu === "hall" && (
-          <div
-            className="dropdown-menu"
-            onMouseEnter={() => setHoverMenu("hall")}
-            onMouseLeave={() => setHoverMenu("")}
-          >
+          <div className="dropdown-menu">
             <Link to="/hall-of-fame">대회 연혁 & 우승팀</Link>
             <Link to="/hall-of-fame/duo">협캠최강듀오</Link>
           </div>
@@ -29,16 +40,12 @@ export default function Navbar() {
 
       <div
         className="dropdown"
-        onMouseEnter={() => setHoverMenu("broadcast")}
-        onMouseLeave={() => setHoverMenu("")}
+        onMouseOver={() => handleMouseOver("broadcast")}
+        onMouseOut={handleMouseOut}
       >
         <div className="dropdown-title">📺 대회영상</div>
         {hoverMenu === "broadcast" && (
-          <div
-            className="dropdown-menu"
-            onMouseEnter={() => setHoverMenu("broadcast")}
-            onMouseLeave={() => setHoverMenu("")}
-          >
+          <div className="dropdown-menu">
             <Link to="/broadcast/25ggf">중계영상(full)</Link>
             <Link to="/highlights/highlightVideos">대회 하이라이트</Link>
           </div>
