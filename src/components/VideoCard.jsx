@@ -7,7 +7,7 @@ export default function VideoCard({ video, onClick }) {
     <div
       className="video-card"
       onClick={() => onClick(video.id)}
-      style={{ cursor: "pointer", minWidth: 320, width: 320, userSelect: "none" }}
+      style={{ cursor: "pointer", minWidth: 500, width: 500, userSelect: "none" }}
     >
       <img
         src={thumbnailUrl}
