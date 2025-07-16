@@ -9,8 +9,8 @@ export default function VideoCard({ video, onClick }) {
       onClick={() => onClick(video.id)}
       style={{
         cursor: "pointer",
-        minWidth: "320px",
-        width: "320px",
+        minWidth: "500px",
+        width: "500px",
         userSelect: "none",
       }}
     >
